@@ -1,0 +1,504 @@
+/* 头部-start*/
+@font-face {
+    font-family: 'nameLogo';
+    src: url('../webfontkit-20220726-032014/khiara_script-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.head {
+    width: 100%;
+    height: 78px;
+    background-color: rgb(205, 205, 205);
+}
+
+.head .content {
+    height: 78px;
+    width: 960px;
+    background-color: rgb(228, 228, 228);
+    margin: 0 auto;
+}
+
+.content .logo {
+    float: left;
+    line-height: 78px;
+    font-family: 'nameLogo';
+    font-size: 50px;
+}
+
+.content .photo {
+    margin-top: 4px;
+    line-height: 70px;
+    float: right;
+}
+
+.photo img {
+    width: 70px;
+    height: 70px;
+    /* 处理失真 */
+    image-rendering: auto;
+    /* object-fit: fill; 
+    object-fit: contain;
+    object-fit: scale-down; */
+    border-radius: 50%;
+}
+
+.content .link {
+    float: right;
+    margin-right: 40px;
+    font-size: 14px;
+    width: 208px;
+    height: 78px;
+    /* line-height: 78px; */
+}
+
+.link ul {
+    width: 208px;
+    height: 78px;
+}
+
+.link ul li {
+    float: left;
+    list-style-type: none;
+    height: 78px;
+    line-height: 78px;
+}
+
+.link ul li a:hover {
+    color: white;
+}
+
+.link span {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* 头部-end */
+/* 基本介绍及联系方式Banner-start */
+.basicIntro {
+    /* 采用定位+transform(位移)进行居中 */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* 终 */
+    width: 920px;
+    height: 160px;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: rgb(205, 205, 205);
+}
+
+/* 电话及邮箱图标 */
+.icon-dianziyouxiang {
+    /* 图标问题 */
+    color: rgb(31, 138, 232);
+    content: "\e750";
+}
+
+.icon-shoujihaoma {
+    color: rgb(31, 138, 232);
+}
+
+/* 补空 */
+.supplement {
+    /* margin+padding+height */
+    height: 220px;
+}
+
+/* 基本介绍及联系方式Banner-end */
+/* 个人技能介绍、基本经历介绍-start */
+/* 个人技能区域-start */
+.skill-exper {
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(228, 228, 228);
+}
+
+.left-skill {
+    float: left;
+    width: 240px;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: rgb(205, 205, 205);
+}
+
+.left-skill .detail {
+    text-align: left;
+    overflow: auto;
+}
+
+.left-skill h3 {
+    text-align: center;
+
+}
+
+.left-skill .detail li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.left-skill .detail .sp1 {
+    float: left;
+    width: 140px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 20px;
+    background-color: rgb(222, 152, 94);
+}
+
+.left-skill .detail .sp2 {
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 130px;
+    height: 20px;
+    background-color: rgb(222, 220, 94);
+}
+
+.left-skill .detail .sp3 {
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 140px;
+    height: 20px;
+    background-color: rgb(152, 189, 199);
+}
+
+.left-skill .detail .sp4 {
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(177, 94, 222);
+}
+
+.left-skill .detail .sp5 {
+    float: left;
+    margin-left: 10px;
+    width: 60px;
+    height: 20px;
+    background-color: rgb(222, 15, 15);
+}
+
+.detail .left-text {
+    float: right;
+    text-align: right;
+}
+
+.detail .right-graph {
+    float: right;
+}
+
+/* 个人技能区域-end */
+/* 个人基本经历-start */
+.skill-exper .right-experience {
+    width: 710px;
+    /* 作为选项卡内容的定位 */
+    position: relative;
+}
+
+.right-experience ul {
+    list-style: none;
+}
+
+.tab {
+    width: 710px;
+    height: 40px;
+    position: relative;
+    padding: 0;
+    margin-left: 240px;
+    z-index: 2;
+}
+
+.tab li {
+    float: left;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    /* border: 1px solid red; */
+    border-bottom: 0;
+    margin-left: 60px;
+    background: rgb(205, 205, 205);
+    cursor: pointer;
+}
+
+.right-experience .tab-content {
+    width: 700px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-left: 260px;
+}
+
+/* 清除浮动，解决高度塌陷 */
+.tab-content::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* 时间区域 */
+.timeDiv {
+    float: left;
+    margin-right: 30px;
+    height: 150px;
+}
+
+/* 内容区域 */
+.contentDiv {}
+
+.tab-content-show {
+    display: block;
+}
+
+.tab-content-hide {
+    display: none;
+}
+
+/* 个人基本经历-end */
+
+/* 个人技能介绍、基本经历介绍-end */
+
+/* 项目介绍-start */
+html,
+body {
+    width: 100%
+}
+
+.projectIntro {
+    margin-bottom: 10px;
+}
+
+.projectIntro .project {
+    /* margin-top: 10px; */
+    width: 100%;
+    height: auto;
+}
+
+.projectIntro>div:nth-child(odd) {
+    background-color: rgb(205, 205, 205);
+}
+
+.projectIntro>div:nth-child(even) {
+    background-color: rgb(228, 228, 228);
+}
+
+.project .mid {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mid::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.mid img {
+    float: left;
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+}
+
+.project .content {
+    padding-left: 160px;
+}
+
+.project .content .projectTime {
+    float: right;
+}
+
+.project .content .role {
+    margin: 10px 0;
+}
+
+.project .content .used {
+    margin-top: 25px;
+}
+
+/* 项目介绍-end */
+/* 互动部分-start */
+.totalArea {
+    width: 960px;
+    height: 370px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+/* 左侧图片欣赏-start */
+.leftArea {
+    float: left;
+    /* border: 1px solid blue; */
+    width: 630px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.leftArea .display {
+    width: 150px;
+    height: 180px;
+    margin-bottom: 10px;
+    /* background-color: rgb(57, 194, 153); */
+}
+
+#img1 {
+    background-image: url(../img/image1.jpg);
+    background-size: 150px 180px;
+}
+
+#img2 {
+    background-image: url(../img/image2.jpg);
+    background-size: 150px 180px;
+
+}
+
+#img3 {
+    background-size: 150px 180px;
+    background-image: url(../img/image3.jpg);
+}
+
+#img4 {
+    background-size: 150px 180px;
+    background-image: url(../img/image4.jpg);
+}
+
+#img5 {
+    background-size: 150px 180px;
+    background-image: url(../img/image5.jpg);
+}
+
+#img6 {
+    background-size: 150px 180px;
+    background-image: url(../img/image6.jpg);
+}
+
+#img7 {
+    background-size: 150px 180px;
+    background-image: url(../img/image7.jpg);
+}
+
+#img8 {
+    background-size: 150px 180px;
+    background-image: url(../img/image8.jpg);
+}
+
+.icon-dianzan {
+    color: #fff;
+}
+
+.picInformation {
+    color: white;
+}
+
+.picInformation p {
+    margin-top: 150px;
+    margin-left: 10px;
+    float: left;
+}
+
+.picInformation span {
+    float: right;
+    margin-top: 155px;
+    margin-right: 10px;
+}
+
+/* 点赞变为红心 */
+.picInformation a:hover span {
+    color: red;
+}
+
+/* 左侧图片欣赏-end */
+/* 右侧留言板-start */
+.rightArea {
+    background-color: rgb(205, 205, 205);
+    width: 328px;
+    height: 370px;
+    float: right;
+    position: relative;
+
+}
+
+.rightArea h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.rightArea .content {
+    width: 326px;
+    height: 324px;
+    /* border: 1px solid rgb(1, 1, 1); */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.content .perMessage {
+    height: 70px;
+    width: 320px;
+    line-height: 90px;
+    background-color: rgb(228, 228, 228);
+    margin: 0 auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.content .perMessage img {
+    width: 70px;
+    height: 70px;
+    image-rendering: auto;
+    border-radius: 50%;
+}
+.content .perMessage .personal{
+    float: left;   
+}
+.content .perMessage .personal .perImg{
+    height: 70px;
+}
+.perMessage .message{
+    float: right;
+    width: 240px;
+    height: 70px;
+    line-height: 70px;
+    background-color: rgb(228, 228, 228);
+}
+.content .inputFrame {
+    width: 320px;
+    height: 34px;
+    background-color: #fff;
+    position: absolute;
+    right: 4px;
+    bottom: 0px;    
+}
+
+.content .inputFrame input {
+    width: 250px;
+    height: 30px;
+}
+
+.content .inputFrame button {
+    width: 58px;
+    height: 34px;
+}
+
+/* 右侧留言板-end */
+/* 互动部分-end */
+
+/* 页脚部分-start */
+
+.footer {
+    margin-top: 5px;
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    background-color: rgb(228, 228, 228);
+    text-align: center;
+    display: inline-block;
+}
+
+/* 页脚部分-end */

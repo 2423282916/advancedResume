@@ -1,0 +1,23 @@
+{
+  "id": "3548161",
+  "name": "高级简历",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15220288",
+      "name": "手机号码",
+      "font_class": "shoujihaoma",
+      "unicode": "e6da",
+      "unicode_decimal": 59098
+    },
+    {
+      "icon_id": "26323684",
+      "name": "电子邮箱",
+      "font_class": "dianziyouxiang",
+      "unicode": "e750",
+      "unicode_decimal": 59216
+    }
+  ]
+}
